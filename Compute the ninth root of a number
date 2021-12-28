@@ -6,9 +6,9 @@ function (x, type = c("O", "I", "F", "M", "2"))
     }
     else .Internal(La_dlange(x, type))
 }
-radicand={n}
+radicand={x}
 sum(radicand)
-exp(log(radicand)/i)
+exp(log(radicand)/n)
 }
 
 
@@ -16,7 +16,7 @@ exp(log(radicand)/i)
 
 
 
-n is the radicand and i the required index.
+x is the radicand and n the required index.
 Ex. the millionesimo root of 9 
 INPUT
 {
