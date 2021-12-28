@@ -11,7 +11,7 @@ sum(radicand)
 exp(log(radicand)/i)
 }
 --------------------------------------------------------
-n is the radican and i the required index.
+n is the radicanD and i the required index.
 Ex. the millionesimo root of 9 
 INPUT
 {
