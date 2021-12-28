@@ -10,7 +10,12 @@ radicand={n}
 sum(radicand)
 exp(log(radicand)/i)
 }
+
+
 --------------------------------------------------------
+
+
+
 n is the radicand and i the required index.
 Ex. the millionesimo root of 9 
 INPUT
@@ -29,7 +34,13 @@ exp(log(radicand)/1000000)
 OUTPUT
 $Rscript main.r
 [1] 1.000002
+
+
+
 --------------------------------------------------------
+
+
+
 Ex. The millionesimo root of the complex 2+2i
 INPUT
 {
