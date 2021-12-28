@@ -29,4 +29,21 @@ exp(log(radicand)/1000000)
 OUTPUT
 $Rscript main.r
 [1] 1.000002
-
+--------------------------------------------------------
+Ex. The millionesimo root of the complex 2+2i
+INPUT
+{
+function (x, type = c("O", "I", "F", "M", "2")) 
+{
+    if (identical("2", type)) {
+        svd(x, nu = 0L, nv = 0L)$d[1L]
+    }
+    else .Internal(La_dlange(x, type))
+}
+radicand={complex(r=2, i=2)}
+sum(radicand)
+exp(log(radicand)/1000000)
+}
+OUTPUT
+$Rscript main.r
+[1] 1.000001+0.000001i
