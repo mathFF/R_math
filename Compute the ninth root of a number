@@ -6,7 +6,7 @@ function (x, type = c("O", "I", "F", "M", "2"))
     }
     else .Internal(La_dlange(x, type))
 }
-radicand={x}
+radicand={n}
 sum(radicand)
 exp(log(radicand)/i)
 }
