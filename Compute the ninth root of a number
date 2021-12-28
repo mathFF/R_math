@@ -10,3 +10,23 @@ radicand={n}
 sum(radicand)
 exp(log(radicand)/i)
 }
+--------------------------------------------------------
+n is the radican and i the required index.
+Ex. the millionesimo root of 9 
+INPUT
+{
+function (x, type = c("O", "I", "F", "M", "2")) 
+{
+    if (identical("2", type)) {
+        svd(x, nu = 0L, nv = 0L)$d[1L]
+    }
+    else .Internal(La_dlange(x, type))
+}
+radicand={9}
+sum(radicand)
+exp(log(radicand)/1000000)
+}
+OUTPUT
+$Rscript main.r
+[1] 1.000002
+
