@@ -7,7 +7,7 @@ function (x, type = c("O", "I", "F", "M", "2"))
     else .Internal(La_dlange(x, type))
 }
 rnorm=(1000); sd=(100);
-t = (0); s = (complex(r=0.5, i=1*t));
+t = (0); s = complex(r=0.5, i=1*t);
 n = {seq(1~inf)};
 zeta = (1/n^s)
 sum (zeta)
