@@ -1,0 +1,15 @@
+{
+function (x, type = c("O", "I", "F", "M", "2")) 
+{
+    if (identical("2", type)) {
+        svd(x, nu = 0L, nv = 0L)$d[1L]
+    }
+    else .Internal(La_dlange(x, type))
+}
+rnorm=(1000); sd=(100);
+t = (0); s = (complex(r=0.5, i=1*t));
+n = {seq(1~inf)}
+zeta = (1/n^s)
+sum (zeta)
+plot(zeta)
+}
